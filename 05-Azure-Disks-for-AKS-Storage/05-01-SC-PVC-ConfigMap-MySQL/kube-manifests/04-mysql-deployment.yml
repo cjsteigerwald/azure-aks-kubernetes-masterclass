@@ -4,16 +4,16 @@ metadata:
   name: mysql
 spec: 
   replicas: 1
-  selector:
+  selector: # Pod Select Label
     matchLabels:
       app: mysql
   strategy:
-    type: Recreate 
-  template: 
+    type: Recreate # Recreate because it is a DB
+  template:  # Pod Template
     metadata: 
       labels: 
         app: mysql
-    spec: 
+    spec: # Pod specification
       containers:
         - name: mysql
           image: mysql:5.6

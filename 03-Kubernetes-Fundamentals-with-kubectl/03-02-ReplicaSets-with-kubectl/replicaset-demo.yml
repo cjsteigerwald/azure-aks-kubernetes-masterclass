@@ -15,5 +15,5 @@ spec:
         app: my-helloworld
     spec:
       containers:
-      - name: my-helloworld-app
-        image: stacksimplify/kube-helloworld:1.0.0
+        - name: my-helloworld-app
+          image: stacksimplify/kube-helloworld:1.0.0
